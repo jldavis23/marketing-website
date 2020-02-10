@@ -53,10 +53,18 @@ html {
 }
 
 .container {
-	max-width: 1000px;
-	margin: 0 auto;
 	font-size: 2rem;
 	font-family: 'Lato', sans-serif;
+}
+
+section {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+section:first-of-type {
+	padding-top: 10rem;
 }
 
 h1 {
@@ -69,14 +77,22 @@ h1,h2,h3,h4 {
 
 /* ---------- HEADER ----------  */
 
+.header-wrapper {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	position: fixed;
+	width: 100%;
+}
+
 header {
-	display: flex;
 	justify-content: space-between;
-	padding: 1rem 0;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 0 2%;
 }
 
 header nav ul {
 	display: flex;
+	justify-content: center;
 }
 
 header a {
@@ -84,8 +100,9 @@ header a {
 	color: #000;
 	font-size: 1.6rem;
 	display: block;
-	margin: 1.6rem 0 1.6rem 1.6rem;
-	padding: 0.5rem 0;
+
+	text-align: center;
+	padding: 1.5rem;
 }
 
 header nav ul li a:hover {
@@ -95,10 +112,26 @@ header nav ul li a:hover {
 .logo {
 	font-family: 'Handlee', cursive;
 	font-size: 2.4rem;
-	margin: 1.6rem 1.6rem 1.6rem 0;
 	color: #858470;
+	text-align: center;
 }
 
 @media only screen and (min-width: 500px) {
+	section:first-of-type {
+		padding-top: 7rem;
+	}
 
+
+	header {
+		display: flex;
+	}
+
+	header a {
+		margin: 1.6rem 0 1.6rem 1.6rem;
+		padding: 0.5rem 0;
+	}
+
+	.logo {
+		margin: 1.6rem 1.6rem 1.6rem 0;
+	}
 }
