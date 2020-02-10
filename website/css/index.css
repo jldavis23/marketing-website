@@ -47,7 +47,12 @@ table {
 	border-spacing: 0;
 }
 
-/* Start your code here: */
+
+/* ------------------------------------ SMALL SCREENS ------------------------------------ */
+* {
+	box-sizing: border-box;
+}
+
 html {
 	font-size: 62.5%;
 }
@@ -63,7 +68,7 @@ section {
 	padding: 0 2%;
 }
 
-section:first-of-type {
+.top-section {
 	padding-top: 10rem;
 }
 
@@ -79,6 +84,7 @@ h1,h2,h3,h4 {
 
 .header-wrapper {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background: #fff;
 	position: fixed;
 	width: 100%;
 }
@@ -110,17 +116,86 @@ header nav ul li a:hover {
 }
 
 .logo {
-	font-family: 'Handlee', cursive;
+	font-family: 'Zilla Slab', serif;
 	font-size: 2.4rem;
 	color: #858470;
 	text-align: center;
 }
 
+/* ---------- BANNER ----------  */
+
+.banner-wrapper {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+
+.banner {
+	color: #fff;
+}
+
+.banner h1 {
+	font-family: 'Zilla Slab', serif;
+	font-size: 4.5rem;
+	margin: 5rem 0 1rem 0;
+}
+
+.banner button {
+	border: none;
+	font-size: 1.6rem;
+	padding: 1rem;
+	border-radius: 3px;
+	background-color: #8d8594;
+	cursor: pointer;
+	margin: 2.5rem 0;
+	color: #fff;
+}
+
+.banner button:hover {
+
+}
+
+/* ---------- VERBS ----------  */
+
+.verbs-wrapper {
+	background-color: #8d8594;
+}
+
+.verbs {
+	justify-content: space-between;
+}
+
+.verbs div {
+	color: #fff;
+	text-align: center;
+	padding: 3rem 0;
+}
+
+.verbs div h2 {
+	font-family: 'Zilla Slab', serif;
+	font-size: 2.4rem;
+}
+
+.verbs div i {
+	font-size: 3.5rem;
+}
+
+.verbs div p {
+	font-size: 1.6rem;
+}
+
+/* ---------- SERVICES ----------  */
+
+/* ------------------------------------ LARGE SCREENS ------------------------------------ */
+
 @media only screen and (min-width: 500px) {
-	section:first-of-type {
+	.top-section {
 		padding-top: 7rem;
 	}
 
+	/* ---------- HEADER ----------  */
 
 	header {
 		display: flex;
@@ -133,5 +208,26 @@ header nav ul li a:hover {
 
 	.logo {
 		margin: 1.6rem 1.6rem 1.6rem 0;
+	}
+
+	/* ---------- BANNER ----------  */
+
+	.banner-wrapper {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
+		
+	}
+
+	.banner {
+		height: 400px;
+	}
+
+	.banner p {
+		max-width: 75%;
+	}
+
+	/* ---------- VERBs ----------  */
+
+	.verbs {
+		display: flex;
 	}
 }
