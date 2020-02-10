@@ -58,7 +58,7 @@ html {
 }
 
 .container {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -68,16 +68,31 @@ section {
 	padding: 0 2%;
 }
 
+section h1 {
+	text-align: center;
+	margin: 3rem 0;
+	font-size: 4rem;
+}
+
+section h2 {
+	font-family: 'Zilla Slab', serif;
+	font-size: 2.4rem;
+}
+
 .top-section {
 	padding-top: 10rem;
 }
 
-h1 {
-	font-size: 4rem;
-}
-
 h1,h2,h3,h4 {
 	margin: 20px 0;
+}
+
+.learn-more {
+	font-size: 1.4rem;
+	border: none;
+	text-decoration: none;
+	display: block;
+	padding: 4rem 0 2rem 0;
 }
 
 /* ---------- HEADER ----------  */
@@ -140,6 +155,7 @@ header nav ul li a:hover {
 	font-family: 'Zilla Slab', serif;
 	font-size: 4.5rem;
 	margin: 5rem 0 1rem 0;
+	text-align: left;
 }
 
 .banner button {
@@ -194,16 +210,18 @@ header nav ul li a:hover {
 
 .services {
 	padding-top: 0.5rem;
-}
-
-.services h1 {
-	text-align: center;
-	margin: 3rem 0;
+	padding-bottom: 3rem;
 }
 
 .services figure {
 	background-color: #fff;
 	margin-bottom: 2.5rem;
+	transition: 0.2s;
+}
+
+.services figure:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	cursor: pointer;
 }
 
 .services figure img {
@@ -222,12 +240,10 @@ header nav ul li a:hover {
 	font-size: 1.6rem;
 }
 
-.services figcaption a {
-	font-size: 1.4rem;
-	border: none;
-	text-decoration: none;
-	display: block;
-	padding: 4rem 0 2rem 0;
+/* ---------- OFFERS ----------  */
+
+.offers {
+
 }
 
 /* ------------------------------------ LARGE SCREENS ------------------------------------ */
@@ -281,6 +297,17 @@ header nav ul li a:hover {
 	}
 
 	.services figure {
+		width: 32%;
+	}
+
+	/* ---------- OFFERS ----------  */
+
+	.offerings-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.offerings {
 		width: 32%;
 	}
 }
