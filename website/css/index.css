@@ -188,6 +188,48 @@ header nav ul li a:hover {
 
 /* ---------- SERVICES ----------  */
 
+.services-wrapper {
+	background-color: #f0f0f0;
+}
+
+.services {
+	padding-top: 0.5rem;
+}
+
+.services h1 {
+	text-align: center;
+	margin: 3rem 0;
+}
+
+.services figure {
+	background-color: #fff;
+	margin-bottom: 2.5rem;
+}
+
+.services figure img {
+	width: 100%;
+}
+
+.services figcaption {
+	padding: 0 4%;
+}
+
+.services figcaption h2 {
+	font-family: 'Zilla Slab', serif;
+}
+
+.services figcaption p {
+	font-size: 1.6rem;
+}
+
+.services figcaption a {
+	font-size: 1.4rem;
+	border: none;
+	text-decoration: none;
+	display: block;
+	padding: 4rem 0 2rem 0;
+}
+
 /* ------------------------------------ LARGE SCREENS ------------------------------------ */
 
 @media only screen and (min-width: 500px) {
@@ -229,5 +271,16 @@ header nav ul li a:hover {
 
 	.verbs {
 		display: flex;
+	}
+
+	/* ---------- SERVICES ----------  */
+
+	.services div {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.services figure {
+		width: 32%;
 	}
 }
