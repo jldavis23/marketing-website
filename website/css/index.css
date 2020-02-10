@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -242,8 +242,58 @@ header nav ul li a:hover {
 
 /* ---------- OFFERS ----------  */
 
-.offers {
+/* ---------- TESTIMONIALS ----------  */
 
+.testimonials-wrapper {
+	background-color: #f0f0f0;
+}
+
+.testimonials {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 5rem;
+}
+
+.testimonials img {
+	width: 100%;
+}
+
+.testimonial {
+	background-color: #fcfcfc;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.testimonial p {
+	grid-column: span 2;
+	padding: 2rem 4%;
+	font-size: 2rem;
+}
+
+.testimonial-author {
+	background-color: #8d8594;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+}
+
+.testimonial-author img {
+	clip-path: circle(50%);
+	
+}
+
+.read-more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #d8c5b4;
+}
+
+.read-more a {
+	padding: 4rem 0 4rem 0;
+	color: #fff;
 }
 
 /* ------------------------------------ LARGE SCREENS ------------------------------------ */
@@ -310,4 +360,20 @@ header nav ul li a:hover {
 	.offerings {
 		width: 32%;
 	}
+
+	/* ---------- TESTIMONIALS ----------  */
+
+	.testimonial {
+		margin-top: -20rem;
+		width: 75%;
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.testimonial p {
+		grid-column: span 1;
+		grid-row: span 2;
+	}
+
+	
+	
 }
