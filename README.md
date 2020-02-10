@@ -48,4 +48,6 @@ We will be using git throughout the semester.  Each project much be forked and 
 
 - [ ] When you have completed the website, submit your repository URL
 
-The URL you used for layout is: 
+The URL you used for layout is: https://cloud.google.com/maps-platform/
+
+URL to the completed website: https://dgm2780-calmmind.netlify.com/
