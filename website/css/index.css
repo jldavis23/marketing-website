@@ -65,18 +65,20 @@ html {
 section {
 	max-width: 1000px;
 	margin: 0 auto;
-	padding: 0 2%;
+	padding: 0 3%;
 }
 
 section h1 {
 	text-align: center;
 	margin: 3rem 0;
 	font-size: 4rem;
+	font-family: 'Zilla Slab', serif;
 }
 
 section h2 {
 	font-family: 'Zilla Slab', serif;
 	font-size: 2.4rem;
+	font-weight: 600;
 }
 
 .top-section {
@@ -168,10 +170,11 @@ header nav ul li a:hover {
 	cursor: pointer;
 	margin: 2.5rem 0;
 	color: #fff;
+	transition: 0.2s;
 }
 
-.banner button:hover {
-
+.button:hover {
+	background-color: #817091;
 }
 
 /* ---------- VERBS ----------  */
@@ -243,6 +246,10 @@ header nav ul li a:hover {
 
 /* ---------- OFFERS ----------  */
 
+.offers {
+	padding-bottom: 3rem;
+}
+
 /* ---------- TESTIMONIALS ----------  */
 
 .testimonials-wrapper {
@@ -271,6 +278,12 @@ header nav ul li a:hover {
 	grid-column: span 2;
 	padding: 2rem 4%;
 	font-size: 2rem;
+	line-height: 2.2;
+}
+
+.testimonial p span {
+	color: #8d8594;
+	font-size: 2.6rem;
 }
 
 .testimonial-author {
