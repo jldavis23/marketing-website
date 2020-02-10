@@ -53,9 +53,10 @@ html {
 }
 
 .container {
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 0 auto;
 	font-size: 2rem;
+	font-family: 'Lato', sans-serif;
 }
 
 h1 {
@@ -64,4 +65,40 @@ h1 {
 
 h1,h2,h3,h4 {
 	margin: 20px 0;
+}
+
+/* ---------- HEADER ----------  */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+
+header nav ul {
+	display: flex;
+}
+
+header a {
+	text-decoration: none;
+	color: #000;
+	font-size: 1.6rem;
+	display: block;
+	margin: 1.6rem 0 1.6rem 1.6rem;
+	padding: 0.5rem 0;
+}
+
+header nav ul li a:hover {
+	border-bottom: 2px solid #8d8594;
+}
+
+.logo {
+	font-family: 'Handlee', cursive;
+	font-size: 2.4rem;
+	margin: 1.6rem 1.6rem 1.6rem 0;
+	color: #858470;
+}
+
+@media only screen and (min-width: 500px) {
+
 }
